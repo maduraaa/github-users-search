@@ -65,7 +65,7 @@ const App: React.FC = () => {
       />
       {searchedData ? (
         <AnswerContent>
-          <a href={searchedData?.html_url} target={"_blank"}>
+          <a href={searchedData?.html_url} target="_blank">
             <ImgStyle src={searchedData?.avatar_url} alt={searchedData?.avatar_url} />
           </a>
           <Blocks>

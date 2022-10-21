@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import './App.css';
 import Colors from './assets/Colors';
@@ -65,9 +66,9 @@ const App: React.FC = () => {
       />
       {searchedData ? (
         <AnswerContent>
-          <a href={searchedData?.html_url} target="_blank">
+          <Link to={searchedData?.html_url} target="_blank">
             <ImgStyle src={searchedData?.avatar_url} alt={searchedData?.avatar_url} />
-          </a>
+          </Link>
           <Blocks>
             <span>Name</span>
             <span>{searchedData?.name}</span>

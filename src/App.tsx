@@ -42,13 +42,13 @@ const App: React.FC = () => {
         })
 
       // get followers
-      if (searchedData) {
-        fetch(`https://api.github.com/users/${search}/followers`)
-          .then((result) => result.json())
-          .then((data) => {
-            setFollowers(data)
-          })
-      }
+      // if (searchedData) {
+      //   fetch(`https://api.github.com/users/${search}/followers`)
+      //     .then((result) => result.json())
+      //     .then((data) => {
+      //       setFollowers(data)
+      //     })
+      // }
     }
   };
 
